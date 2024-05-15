@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<custom_component>
+	<metadata>
+		<version smartsim="1.4.1"/>
+	</metadata>
+	<name>4-Bit Full Adder</name>
+	<description></description>
+	<label></label>
+	<bound right="30" down="50" left="-30" up="-50"/>
+	<colour a="255" r="78" g="154" b="6"/>
+	<pin x="-30" y="-40" length="10" direction="left" id="0" flow="in" label="AB1" required="true"/>
+	<pin x="-30" y="-30" length="10" direction="left" id="1" flow="in" label="AB2" required="true"/>
+	<pin x="-30" y="10" length="10" direction="left" id="2" flow="in" label="BB1" required="true"/>
+	<pin x="-30" y="20" length="10" direction="left" id="3" flow="in" label="BB2" required="true"/>
+	<pin x="-30" y="-20" length="10" direction="left" id="4" flow="in" label="AB3" required="true"/>
+	<pin x="-30" y="-10" length="10" direction="left" id="5" flow="in" label="AB4" required="true"/>
+	<pin x="-30" y="30" length="10" direction="left" id="6" flow="in" label="BB3" required="true"/>
+	<pin x="-30" y="40" length="10" direction="left" id="7" flow="in" label="BB4" required="true"/>
+	<pin x="0" y="-50" length="10" direction="up" id="8" flow="in" label="CI" required="true"/>
+	<pin x="0" y="50" length="10" direction="down" id="9" flow="out" label="CO" required="false"/>
+	<pin x="30" y="-20" length="10" direction="right" id="10" flow="out" label="OB1" required="true"/>
+	<pin x="30" y="-10" length="10" direction="right" id="11" flow="out" label="OB2" required="true"/>
+	<pin x="30" y="10" length="10" direction="right" id="12" flow="out" label="OB3" required="true"/>
+	<pin x="30" y="20" length="10" direction="right" id="13" flow="out" label="OB4" required="true"/>
+	<wire id="0">
+		<path>
+			<point x="-40" y="-80"/>
+			<point x="-60" y="-80"/>
+			<point x="-60" y="-90"/>
+			<point x="-80" y="-90"/>
+		</path>
+		<tag type="interface" xwire="-80" ywire="-90" xtag="-85" ytag="-90" flow="in" pinid="0" text="A (Bit 1)"/>
+	</wire>
+	<wire id="1">
+		<path>
+			<point x="-40" y="-70"/>
+			<point x="-80" y="-70"/>
+		</path>
+		<tag type="interface" xwire="-80" ywire="-70" xtag="-85" ytag="-70" flow="in" pinid="1" text="A (Bit 2)"/>
+	</wire>
+	<wire id="2">
+		<path>
+			<point x="-40" y="-50"/>
+			<point x="-80" y="-50"/>
+		</path>
+		<tag type="interface" xwire="-80" ywire="-50" xtag="-85" ytag="-50" flow="in" pinid="2" text="B (Bit 1)"/>
+	</wire>
+	<wire id="3">
+		<path>
+			<point x="-40" y="-40"/>
+			<point x="-60" y="-40"/>
+			<point x="-60" y="-30"/>
+			<point x="-80" y="-30"/>
+		</path>
+		<tag type="interface" xwire="-80" ywire="-30" xtag="-85" ytag="-30" flow="in" pinid="3" text="B (Bit 2)"/>
+	</wire>
+	<wire id="4">
+		<path>
+			<point x="-40" y="40"/>
+			<point x="-60" y="40"/>
+			<point x="-60" y="30"/>
+			<point x="-80" y="30"/>
+		</path>
+		<tag type="interface" xwire="-80" ywire="30" xtag="-85" ytag="30" flow="in" pinid="4" text="A (Bit 3)"/>
+	</wire>
+	<wire id="5">
+		<path>
+			<point x="-40" y="50"/>
+			<point x="-80" y="50"/>
+		</path>
+		<tag type="interface" xwire="-80" ywire="50" xtag="-85" ytag="50" flow="in" pinid="5" text="A (Bit 4)"/>
+	</wire>
+	<wire id="6">
+		<path>
+			<point x="-40" y="70"/>
+			<point x="-80" y="70"/>
+		</path>
+		<tag type="interface" xwire="-80" ywire="70" xtag="-85" ytag="70" flow="in" pinid="6" text="B (Bit 3)"/>
+	</wire>
+	<wire id="7">
+		<path>
+			<point x="-40" y="80"/>
+			<point x="-60" y="80"/>
+			<point x="-60" y="90"/>
+			<point x="-80" y="90"/>
+		</path>
+		<tag type="interface" xwire="-80" ywire="90" xtag="-85" ytag="90" flow="in" pinid="7" text="B (Bit 4)"/>
+	</wire>
+	<wire id="8">
+		<path>
+			<point x="0" y="-100"/>
+			<point x="0" y="-140"/>
+		</path>
+		<tag type="interface" xwire="0" ywire="-140" xtag="0" ytag="-145" flow="in" pinid="8" text="Carry In"/>
+	</wire>
+	<wire id="9">
+		<path>
+			<point x="0" y="-20"/>
+			<point x="0" y="20"/>
+		</path>
+	</wire>
+	<wire id="10">
+		<path>
+			<point x="0" y="100"/>
+			<point x="0" y="140"/>
+		</path>
+		<tag type="interface" xwire="0" ywire="140" xtag="0" ytag="145" flow="out" pinid="9" text="Carry Out"/>
+	</wire>
+	<wire id="11">
+		<path>
+			<point x="40" y="-70"/>
+			<point x="80" y="-70"/>
+		</path>
+		<tag type="interface" xwire="80" ywire="-70" xtag="85" ytag="-70" flow="out" pinid="10" text="O (Bit 1)"/>
+	</wire>
+	<wire id="12">
+		<path>
+			<point x="40" y="-50"/>
+			<point x="80" y="-50"/>
+		</path>
+		<tag type="interface" xwire="80" ywire="-50" xtag="85" ytag="-50" flow="out" pinid="11" text="O (Bit 2)"/>
+	</wire>
+	<wire id="13">
+		<path>
+			<point x="40" y="50"/>
+			<point x="80" y="50"/>
+		</path>
+		<tag type="interface" xwire="80" ywire="50" xtag="85" ytag="50" flow="out" pinid="12" text="O (Bit 3)"/>
+	</wire>
+	<wire id="14">
+		<path>
+			<point x="40" y="70"/>
+			<point x="80" y="70"/>
+		</path>
+		<tag type="interface" xwire="80" ywire="70" xtag="85" ytag="70" flow="out" pinid="13" text="O (Bit 4)"/>
+	</wire>
+	<component id="0" def="2-Bit Full Adder" x="0" y="-60" direction="right" flip="false">
+		<connection flow="in" pinid="0" wireid="0" invert="false"/>
+		<connection flow="in" pinid="1" wireid="2" invert="false"/>
+		<connection flow="in" pinid="2" wireid="1" invert="false"/>
+		<connection flow="in" pinid="3" wireid="3" invert="false"/>
+		<connection flow="in" pinid="4" wireid="8" invert="false"/>
+		<connection flow="out" pinid="5" wireid="9" invert="false"/>
+		<connection flow="out" pinid="6" wireid="11" invert="false"/>
+		<connection flow="out" pinid="7" wireid="12" invert="false"/>
+	</component>
+	<component id="1" def="2-Bit Full Adder" x="0" y="60" direction="right" flip="false">
+		<connection flow="in" pinid="0" wireid="4" invert="false"/>
+		<connection flow="in" pinid="1" wireid="6" invert="false"/>
+		<connection flow="in" pinid="2" wireid="5" invert="false"/>
+		<connection flow="in" pinid="3" wireid="7" invert="false"/>
+		<connection flow="in" pinid="4" wireid="9" invert="false"/>
+		<connection flow="out" pinid="5" wireid="10" invert="false"/>
+		<connection flow="out" pinid="6" wireid="13" invert="false"/>
+		<connection flow="out" pinid="7" wireid="14" invert="false"/>
+	</component>
+</custom_component>

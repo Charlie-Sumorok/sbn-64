@@ -5,4 +5,12 @@
 	</metadata>
 	<name>SBN 64</name>
 	<description></description>
+	<component>./components/stateless/HA.ssc</component>
+	<component>./components/stateless/FA.ssc</component>
+	<component>./components/stateless/2-bit-FA.ssc</component>
+	<component>./components/stateless/4-bit-FA.ssc</component>
+	<component>./components/stateless/8-bit-FA.ssc</component>
+	<component>./components/stateless/16-bit-FA.ssc</component>
+	<component>./components/stateless/32-bit-FA.ssc</component>
+	<component>./components/stateless/64-bit-FA.ssc</component>
 </project>
